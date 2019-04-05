@@ -1,10 +1,10 @@
 set --universal pure_version 2.1.8 # used for bug report
 
 # Base colors
-_pure_set_default pure_color_primary (set_color blue)
+_pure_set_default pure_color_primary (set_color normal)  # de-emphasize directory
 _pure_set_default pure_color_info (set_color cyan)
 _pure_set_default pure_color_mute (set_color brblack)
-_pure_set_default pure_color_success (set_color magenta)
+_pure_set_default pure_color_success (set_color green)
 _pure_set_default pure_color_normal (set_color normal)
 _pure_set_default pure_color_danger (set_color red)
 _pure_set_default pure_color_light (set_color white)
@@ -36,7 +36,7 @@ _pure_set_default pure_color_ssh_user_normal $pure_color_mute
 _pure_set_default pure_color_ssh_user_root $pure_color_light
 
 # Virtualenv for Pyhon
-_pure_set_default pure_color_virtualenv $pure_color_mute
+_pure_set_default pure_color_virtualenv $pure_color_success  # emphasize python version
 
 # Print current working directory at the beginning of prompt
 # true (default):   current directory, git, user@hostname (ssh-only), command duration
